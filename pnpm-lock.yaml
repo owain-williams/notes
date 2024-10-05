@@ -1,0 +1,135 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  sst:
+    specifier: ^3
+    version: 3.1.65
+
+devDependencies:
+  '@tsconfig/node20':
+    specifier: ^20.1.4
+    version: 20.1.4
+  typescript:
+    specifier: 5.6.2
+    version: 5.6.2
+
+packages:
+
+  /@tsconfig/node20@20.1.4:
+    resolution: {integrity: sha512-sqgsT69YFeLWf5NtJ4Xq/xAF8p4ZQHlmGW74Nu2tD4+g5fAsposc4ZfaaPixVu4y01BEiDCWLRDCvDM5JOsRxg==}
+    dev: true
+
+  /aws4fetch@1.0.20:
+    resolution: {integrity: sha512-/djoAN709iY65ETD6LKCtyyEI04XIBP5xVvfmNxsEP0uJB5tyaGBztSryRr4HqMStr9R06PisQE7m9zDTXKu6g==}
+    dev: false
+
+  /jose@4.15.9:
+    resolution: {integrity: sha512-1vUQX+IdDMVPj4k8kOxgUqlcK518yluMuGZwqlr44FS1ppZB/5GWh4rZG89erpOBOJjU/OBsnCVFfapsRz6nEA==}
+    dev: false
+
+  /jose@5.2.3:
+    resolution: {integrity: sha512-KUXdbctm1uHVL8BYhnyHkgp3zDX5KW8ZhAKVFEfUbU2P8Alpzjb+48hHvjOdQIyPshoblhzsuqOwEEAbtHVirA==}
+    dev: false
+
+  /lru-cache@6.0.0:
+    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
+    engines: {node: '>=10'}
+    dependencies:
+      yallist: 4.0.0
+    dev: false
+
+  /object-hash@2.2.0:
+    resolution: {integrity: sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==}
+    engines: {node: '>= 6'}
+    dev: false
+
+  /oidc-token-hash@5.0.3:
+    resolution: {integrity: sha512-IF4PcGgzAr6XXSff26Sk/+P4KZFJVuHAJZj3wgO3vX2bMdNVp/QXTP3P7CEm9V1IdG8lDLY3HhiqpsE/nOwpPw==}
+    engines: {node: ^10.13.0 || >=12.0.0}
+    dev: false
+
+  /openid-client@5.6.4:
+    resolution: {integrity: sha512-T1h3B10BRPKfcObdBklX639tVz+xh34O7GjofqrqiAQdm7eHsQ00ih18x6wuJ/E6FxdtS2u3FmUGPDeEcMwzNA==}
+    dependencies:
+      jose: 4.15.9
+      lru-cache: 6.0.0
+      object-hash: 2.2.0
+      oidc-token-hash: 5.0.3
+    dev: false
+
+  /sst-darwin-arm64@3.1.65:
+    resolution: {integrity: sha512-N3Uu03x6Vo7bC4bfITK+gKFPZR9UJ42NWOCFmFFaxm6P0kXif9W83hl3NWABNh28KqKEa5AkWvdvBC1C2KpKNg==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /sst-darwin-x64@3.1.65:
+    resolution: {integrity: sha512-0dzk+zHaTzWlhI45InNBPu8A7C/nA7IMBwtq6AVhSO3SJWuFL0drMlZvYuUjqKwQIZ+9YCyAsaxOIRbD+XlLhA==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /sst-linux-arm64@3.1.65:
+    resolution: {integrity: sha512-5SOSE1QGOY73a7cFKWcNipDyywn5K14v+1oVAH5QvGoubNCX4yi3O4KXqy2rifIpbeYu0ViupCfAbI3WyaOt0w==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /sst-linux-x64@3.1.65:
+    resolution: {integrity: sha512-baOGAxdoSfJ5I2e7Ti46Bzh6GOK+D14LpaQOyksP0b6/zSes8BWHAGdhfQqme5b9AhYDLncNsYuVPXAiZsmNtw==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /sst-linux-x86@3.1.65:
+    resolution: {integrity: sha512-2ZtscR0QxpfRVnfMBenyAE1wmVWjR/wbSiE2A5Rmm6Yh3i/flHf/2Par5b65BakuVVtyinHVaRvScOJO/Le5hQ==}
+    cpu: [x86]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /sst@3.1.65:
+    resolution: {integrity: sha512-NP5O8luXC9RzD8T3KDy3LPLbnVSMBHUmVSWjRqcVsm/3RPtgesU5qkigppVK7XO5GE0zKhkbEWBS2EGZ3yM/Iw==}
+    hasBin: true
+    peerDependencies:
+      hono: 4.x
+      valibot: 0.30.x
+    peerDependenciesMeta:
+      hono:
+        optional: true
+      valibot:
+        optional: true
+    dependencies:
+      aws4fetch: 1.0.20
+      jose: 5.2.3
+      openid-client: 5.6.4
+    optionalDependencies:
+      sst-darwin-arm64: 3.1.65
+      sst-darwin-x64: 3.1.65
+      sst-linux-arm64: 3.1.65
+      sst-linux-x64: 3.1.65
+      sst-linux-x86: 3.1.65
+    dev: false
+
+  /typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
+  /yallist@4.0.0:
+    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: false
